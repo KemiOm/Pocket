@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Insights</title>
+    <link rel="stylesheet" href="market.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PocketWatchers</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="market.html">Stock Trends</a>
+            <a href="payment.html">Payment Tracker</a>
+            <a href="journal.html">Journal Wall</a>
+            <a href="page2.html">Economy News</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>Market Analysis</h1>
+        <div class="stock-selection">
+            <!-- Stock dropdown with options populated dynamically -->
+            <select id="stockSelect">
+                <option value="" disabled selected>Select a stock</option>
+            </select>
+            <div class="button-group">
+                <button id="lastWeek">Last Week</button>
+                <button id="lastSixMonths">Last 6 Months</button>
+                <button id="lastYear">Last Year</button>
+            </div>
+           
+        </div>
+
+        <div id="chartContainer" class="chart-container">
+            <canvas id="stockChart" width="600" height="300"></canvas>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+    <p>&copy; 2024 Kemi Omoniyi. All rights reserved.</p>
+</footer>
+
+    
+    <script src="market.js"></script>
+</body>
+</html>
+
+
+
+
+
+

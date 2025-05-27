@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income & Expenses Tracker</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="header">
+<div class="logo">PocketWatchers</div>
+<nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="market.html">Stock Trends</a>
+    <a href="payment.html">Payment Tracker</a>
+    <a href="journal.html">Journal Wall</a>
+    <a href="page2.html">Economy News</a>
+</nav>
+</header>
+    <div class="container">
+        <div class="form-section">
+            <h1>Income & Expenses</h1>
+            <input type="number" id="salaryInput" placeholder="Monthly Salary (Income)" />
+            <input type="number" id="expenseInput" placeholder="Expense Amount" />
+            <select id="expenseType">
+                <option value="" disabled selected>Select Expense Type</option>
+                <option value="Food">Food</option>
+                <option value="Rent">Rent</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Transport">Transport</option>
+                <option value="Groceries">Groceries</option>
+            </select>
+            <input type="date" id="dateInput" />
+            <div class="button-group">
+                <button id="addButton">Add</button>
+                <button id="editButton">Edit</button>
+                <button id="deleteButton">Delete</button>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Monthly Expenses</h2>
+            <canvas id="barChart"></canvas>
+            <h2>Monthly Expenses Overview</h2>
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+   
+    <script src="payment.js"></script>
+</body>
+</html>
+
+

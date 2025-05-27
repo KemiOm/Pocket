@@ -1,0 +1,107 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: center; /* Center the logo and nav */
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  height: 40px; 
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main Content Styling */
+.main {
+  margin-top: 40px; /* Ensure content starts below fixed navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 40px); /* Adjust height to fit below navbar */
+  background-image: url('https://plus.unsplash.com/premium_photo-1679923813998-6603ee2466c5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D'); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  opacity: 0.5; /* Adjust opacity for overlay effect */
+}
+
+.content {
+  position: relative;
+  z-index: 10; /* Ensure content appears above the background */
+  color: white; /* Change text color for better contrast */
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.share-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4F46E5; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+}
+
+.share-button:hover {
+  background-color: #3b36c9; /* Darken button on hover */
+}
+
+#subscribe-popup {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#emailInput {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+#submitEmailButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#submitEmailButton:hover {
+  background-color: #0056b3;
+}

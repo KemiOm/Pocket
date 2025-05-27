@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "servor --reload",
+    "build": "mkdir -p dist && cp -r *.html *.js *.css dist/"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.8.0",
+    "servor": "^4.0.2"
+  },
+  "name": "pocketwatchers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Financial tracking and analysis application"
+}

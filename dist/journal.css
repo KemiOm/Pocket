@@ -1,0 +1,190 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo', sans-serif; /* Use Archivo font */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: center; /* Center the logo and nav */
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  height: 20px; /* Adjusted height for better visibility */
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  display: flex; /* Use flexbox for centering */
+  align-items: center;
+}
+
+/* Main Content Styling */
+.main {
+  margin-top: 40px; /* Match this to the height of the header */
+  padding: 20px;
+  text-align: center; /* Center text in the main content */
+}
+h1 {
+  font-size: 2.5rem; /* Adjust font size */
+  margin-top: 20px; /* Space from the top */
+  color: #333; /* Ensure the color contrasts well */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+/* Journal Entry Form Styling */
+form {
+  max-width: 400px; /* Set a max width for the form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Border for form styling */
+  border-radius: 10px; /* Rounded corners for the form */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Make labels bold */
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for inputs */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: 5px; /* Rounded corners */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing for textarea */
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4F46E5; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #3b36c9; /* Darken button on hover */
+}
+.journal-entries {
+  display: flex;
+  flex-wrap: wrap; /* Allow notes to wrap to the next line */
+  justify-content: center; /* Center the entries */
+  margin-top: 20px; /* Space above the entries */
+}
+
+.post-it {
+  background-color: #52514f; /* Light yellow for post-it effect */
+  border: 1px solid #e0e0e0; /* Border for definition */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Padding inside the note */
+  margin: 10px; /* Space between notes */
+  width: 250px; /* Fixed width for all notes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative; /* For absolute positioning of the delete button */
+}
+
+.post-it h2 {
+  font-size: 1.2rem; /* Title size */
+  margin-bottom: 10px; /* Space below title */
+  color: white;
+}
+
+.post-it p {
+  font-size: 1rem; /* Description size */
+  margin-bottom: 5px; /* Space below description */
+  color: white;
+}
+
+/* Button styling for post-it delete or edit actions */
+.post-it button {
+  position: absolute; /* Position the button inside the post-it */
+  bottom: 10px; /* Position near the bottom */
+  right: 10px; /* Position near the right */
+  padding: 5px 10px; /* Button padding */
+  background-color: #4F46E5; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.post-it button:hover {
+  background-color: #3b36c9; /* Darken button on hover */
+}
+
+
+/* Footer Styling */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer p {
+  margin: 0;
+}
+
+footer .footer-links {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
